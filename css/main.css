@@ -15,20 +15,30 @@ footer {
     border-radius: 3px;
 }
 #main_wrapper {
-    grid: auto / auto auto auto;
     display: grid;
+    grid: auto auto / auto auto 20%;
+    grid-template-areas: 
+    'top_nav top_nav top_nav'
+    'article article sidebar';
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 #top_nav {
+    grid-area: top_nav;
     background-color: darkgray;
     padding: 5px;
     border-radius: 3px;
 }
 #sidebar {
+    grid-area: sidebar;
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 3px;
 }
 article {
+    grid-area: article;
     background-color: white;
     padding: 5px;
     border-radius: 3px;
