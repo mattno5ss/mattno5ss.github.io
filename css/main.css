@@ -1,11 +1,17 @@
-header {
-    background-color: lightgray;
-}
-
 body {
     background-color: gray;
 }
-
+header {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 3px;
+}
 footer {
     background-color: lightgray;
+    padding: 5px;
+    border-radius: 3px;
+}
+section {
+    padding: 5px;
+    border-radius: 3px;
 }
