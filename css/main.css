@@ -9,13 +9,17 @@ header {
     padding: 5px;
     border-radius: 3px;
 }
-nav {
-    background-color: darkgray;
+footer {
+    background-color: lightgray;
     padding: 5px;
     border-radius: 3px;
 }
-footer {
-    background-color: lightgray;
+#main_wrapper {
+    grid: auto / auto auto auto;
+    display: grid;
+}
+#top_nav {
+    background-color: darkgray;
     padding: 5px;
     border-radius: 3px;
 }
@@ -24,7 +28,7 @@ footer {
     padding: 5px;
     border-radius: 3px;
 }
-article > p {
+article {
     background-color: white;
     padding: 5px;
     border-radius: 3px;
