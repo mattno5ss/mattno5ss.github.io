@@ -16,10 +16,10 @@ footer {
 }
 #main_wrapper {
     display: grid;
-    grid: auto auto / auto auto 20%;
+    grid: auto auto / auto auto auto auto;
     grid-template-areas: 
-    'top_nav top_nav top_nav'
-    'article article sidebar';
+    'top_nav top_nav top_nav top_nav'
+    'article article article sidebar';
     gap: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
