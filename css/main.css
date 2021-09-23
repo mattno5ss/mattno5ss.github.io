@@ -28,8 +28,17 @@ footer {
 #top_nav {
     grid-area: top_nav;
     background-color: darkgray;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 3px;
+}
+.nav_btn {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.nav_btn:hover {
+    background-color: gray;
 }
 #sidebar {
     grid-area: sidebar;
