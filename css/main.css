@@ -16,17 +16,20 @@ footer {
 }
 #main_wrapper {
     display: grid;
-    grid: auto auto / auto auto auto auto;
+    grid: auto auto auto auto / auto auto auto;
     grid-template-areas: 
+    'header header header header'
     'top_nav top_nav top_nav top_nav'
-    'article article article sidebar';
+    'container container container container'
+    'footer footer footer footer';
     gap: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
 }
+#header {grid-area: header;}
+#top_nav {grid-area: top_nav;}
+#container {grid-area: container;}
+#footer {grid-area: footer;}
+
 #top_nav {
-    grid-area: top_nav;
     background-color: darkgray;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -40,14 +43,23 @@ footer {
 .nav_btn:hover {
     background-color: gray;
 }
+
+#container {
+    display: grid;
+    grid: auto / auto 25%;
+    grid-template-areas: 
+    'article sidebar';
+    gap: 5px;
+}
+#sidebar {grid-area: sidebar;}
+#article {grid-area: article;}
+
 #sidebar {
-    grid-area: sidebar;
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 3px;
 }
 article {
-    grid-area: article;
     background-color: white;
     padding: 5px;
     border-radius: 3px;
