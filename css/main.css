@@ -18,10 +18,10 @@ footer {
     display: grid;
     grid: auto auto auto auto / auto auto auto;
     grid-template-areas: 
-    'header header header header'
-    'top_nav top_nav top_nav top_nav'
-    'container container container container'
-    'footer footer footer footer';
+    'header header header'
+    'top_nav top_nav top_nav'
+    'container container container'
+    'footer footer footer';
     gap: 5px;
 }
 #header {grid-area: header;}
