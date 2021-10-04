@@ -64,3 +64,8 @@ article {
     padding: 5px;
     border-radius: 3px;
 }
+
+#graph {
+    background-color: white;
+    border-radius: 3px;
+}
