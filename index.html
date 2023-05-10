@@ -2,54 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/main.css">
-    <meta name="author" content="MattNo5ss">
-    <meta name="description" content="Learning Sandbox">
-    <meta name="keywords" content="mattno5ss">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Sandbox</title>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Matthew Green</title>
+  <meta name="description" content="">
+  <meta name="author" content="Matthew Green">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/terminal.svg">
 </head>
 
 <body>
-    <div id="main_wrapper">
-        <header id="header">Header</header>
-        <nav id="top_nav">
-            <a href="../index.html" class="nav_btn" id="home_link">Home</a>
-            <a href="../content/plot.html" class="nav_btn" id="plot_link">Plot</a>
-            <a href="../content/guides.html" class="nav_btn" id="guides_link">Guides</a>
-            <a href="../content/articles.html" class="nav_btn" id="articles_link">Articles</a>
-            <a href="#about" class="nav_btn" id="about_link">About</a>
-        </nav>
-        <div id="container">
-            <article class="article">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus
-                    mi vitae purus aliquet, a ornare dolor porttitor. Ut ex augue,
-                    ultrices at felis pretium, commodo pharetra sapien. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Aliquam erat
-                    volutpat. In at odio at ex semper sollicitudin. Curabitur eleifend
-                    sit amet elit sollicitudin suscipit. Nullam vel sapien magna.
-                    Curabitur ullamcorper augue eget erat aliquam vulputate. Nam a velit
-                    a massa vulputate imperdiet at ac lectus. Aenean posuere tortor
-                    dolor, in tristique lorem laoreet at. Curabitur quis nisl viverra,
-                    suscipit elit quis, pellentesque libero. Nunc eu tincidunt lectus,
-                    et luctus nulla. Quisque vehicula fermentum mauris, quis rutrum nunc
-                    congue sed.
-                </p>
-            </article>
-            <section id="sidebar">
-                <p>Sidebar placeholder</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </section>
-        </div>
-        <footer id="footer">
-            <a href="https://github.com/mattno5ss" target="_blank"><img src="../img/github.svg" height="32"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="../img/linkedin.svg" height="32"></a>
-        </footer>
+  <header class="header">
+    <ul class="header-links">
+      <a href="index.html" class="home-link">HOME</a>
+      <a href="articles.html" class="articles-link">ARTICLES</a>
+      <a href="projects.html" class="projects-link">PROJECTS</a>
+      <a href="contact.html" class="contact-link">CONTACT</a>
+    </ul>
+  </header>
+
+  <!-- Primary Page Layout -->
+
+  <div class="container">
+    <div class="section about">
+      <h4>About Me</h4>
+      <p>My name is Matthew Green, and I'm a husband, father, baseball lover, tech enthusiast, and tinkerer that enjoys
+        learning new things. I've worn many hats professionally such as Mathematician, Programmer, Analyst, and
+        Engineer, but sharing knowledge through teaching/tutoring is something I've also enjoyed in the past. Anyways,
+        if you're reading this, then you may be interested in one of the services I can provide below.</p>
     </div>
+    <hr class="separator">
+    <div class="section computer">
+      <div class="info">
+        <h4>Computer Services</h4>
+        <p>Working in the technology field for over a decade means dealing with all sorts of computer issues on a daily
+          basis. Whether it's Windows, Mac, or Linux, here are some of the services I can provide:</p>
+        <ul>
+          <li>Diagnostic Troubleshooting</li>
+          <li>Repair Services</li>
+          <li>Data Backup/Recovery/Transfer</li>
+          <li>Virus Removal</li>
+          <li>Custom PC Builds</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img class="pcb" src="img/computer.jpg" alt="pcb">
+      </div>
+    </div>
+    <hr class="separator">
+    <div class="section math">
+      <div class="info">
+        <h4>Math Tutoring</h4>
+        <p>I'm not a certified teacher and don't have professional teaching experience. However, I have a degree in
+          Mathematics, worked as a Mathematician for 4 years, and tutored friends and family. So, I'm confident that I
+          could help students struggling with Math classes such as:</p>
+        <ul>
+          <li>Algebra</li>
+          <li>Geometry</li>
+          <li>Trigonometry</li>
+          <li>Pre-Calculus/Calculus</li>
+          <li>and more...</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img class="eq" src="img/math.jpg" alt="equations">
+      </div>
+    </div>
+    <hr class="separator">
+    <div class="section programming">
+      <div class="info">
+        <h4>Programming Services</h4>
+        <p>Make your life easier by automating tedious computer tasks such as spreadsheet work (Excel), image editing,
+          data collection and visualization, etc.</p>
+        <ul>
+          <li>Python
+            <ul>
+              <li>Web Scrapers</li>
+              <li>Task Automation</li>
+              <li>Data Analysis and Visualization</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Get your name out there with a static website or landing page to share with potential customers.</p>
+        <ul>
+          <li>HTML/CSS/JavaScript
+            <ul>
+              <li>Browser-based Apps</li>
+              <li>Static Websites</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="image">
+        <img class="code" src="img/code.svg" alt="code">
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document -->
+
+  <footer class="footer">
+    <p>Copyright © 2023</p>
+  </footer>
 </body>
 
 </html>

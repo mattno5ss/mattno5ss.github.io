@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../font/Raleway-Regular.ttf);
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header {
+  background-color: gray;
+  height: 4rem;
+}
+
+.header-links {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 4rem;
+}
+
+.header-links>a {
+  font-weight: 600;
+  text-decoration: none;
+  color: whitesmoke;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.header-links>a:hover {
+  color: gray;
+  background-color: whitesmoke;
+}
+
+.container {
+  min-height: calc(100vh - 9rem);
+}
+
+.section {
+  background-color: whitesmoke;
+}
+
+.computer,
+.math,
+.programming {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+}
+
+.computer>.image,
+.math>.image {
+  padding: 4rem;
+}
+
+.code,
+.pcb,
+.eq {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.graph>iframe {
+  height: 640px;
+  width: 840px;
+}
+
+.python-projects>img {
+  max-width: 100%;
+}
+
+.separator {
+  border-top: 3px solid #bbb;
+}
+
+.footer {
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: gray;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  line-height: 4rem;
+  margin-top: 1rem;
+}
+
+.email::after {
+  content: attr(data-user) "\0040" attr(data-domain);
+}
+
+.phone::after {
+  content: "123-456-7890";
+}

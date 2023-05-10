@@ -1,0 +1,61 @@
+.section.calculator {
+    display: grid;
+}
+.calc {
+    place-self: center;
+    display: grid;
+    grid-template: 0.4fr / 100%;
+    height: fit-content;
+    width: 20rem;
+
+    border-radius: 10px;
+    padding: 1rem;
+
+    font: 18px monospace;
+    background-color: rgb(160, 160, 160);
+}
+.display {
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px black inset;
+}
+.previous-display {
+    font: 1.5rem monospace;
+    color: gray;
+    text-align: end;
+    min-height: 2rem;
+    overflow: hidden;
+}
+.current-display {
+    font: 3.5rem monospace;
+    text-align: end;
+    min-height: 4.5rem;
+    overflow: hidden;
+}
+.btn-group {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    gap: 0.5rem;
+}
+.zero {
+    grid-column: 1 / 3;
+}
+button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+.number, .decimal {
+    background-color: lightgray;
+}
+.operator, .equals, .clear, .backspace {
+    background-color: slategray;
+}
