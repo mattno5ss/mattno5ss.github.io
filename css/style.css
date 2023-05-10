@@ -90,3 +90,18 @@ body {
 .phone::after {
   content: "123-456-7890";
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+  .computer,
+.math,
+.programming {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+  
+  .image {
+    display: none;
+  }
+}
