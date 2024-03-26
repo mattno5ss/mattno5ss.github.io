@@ -3,6 +3,42 @@
   src: url(../font/Raleway-Regular.ttf);
 }
 
+/* REDIRECT BUTTON/LINK */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.redirect p {
+  margin: auto;
+}
+
+.redirect {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: green;
+  box-shadow: 0 4px 8px black;
+  height: 4rem;
+  width: 15rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.redirect:hover {
+  color: whitesmoke;
+}
+
+.redirect:active {
+  scale: 0.96;
+}
+
+/**/
+
 body {
   background-color: whitesmoke;
 }
@@ -83,14 +119,6 @@ body {
   margin-top: 1rem;
 }
 
-.email::after {
-  content: attr(data-user) "\0040" attr(data-domain);
-}
-
-.phone::after {
-  content: "123-456-7890";
-}
-
 .card {
   border-radius: 6px;
 }
@@ -98,13 +126,14 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 800px) {
+
   .computer,
   .math,
   .programming {
     display: grid;
     grid-template: 0.5fr 1fr / 1fr;
   }
-  
+
   .info {
     grid-area: 2/1/3/2;
   }
