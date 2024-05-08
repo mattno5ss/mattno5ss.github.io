@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8" />
-    <title>Matthew Green</title>
-    <meta name="description" content="personal website" />
-    <meta name="author" content="Matthew Green" />
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>Matthew Green</title>
+  <meta name="description" content="redirect to personal website" />
+  <meta name="author" content="Matthew Green" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/modern-normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/terminal.svg" />
+</head>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/modern-normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<body>
+  <header class="header">
+    <ul class="header-links">
+      <p>Matthew Green</p>
+    </ul>
+  </header>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/terminal.svg" />
-  </head>
+  <div class="container">
+    <h3>My website has moved!</h3>
+    <p>Redirecting you in 5 seconds...</p>
+  </div>
 
-  <body>
-    <header class="header">
-      <ul class="header-links">
-        <a href="index.html" class="home-link">HOME</a>
-      </ul>
-    </header>
+  <script>
+    function redirect() {
+      window.location = "https://matthewgreen.pages.dev/";
+    }
+    setTimeout('redirect()', 5000);
+  </script>
 
-    <!-- Primary Page Layout -->
+  <footer class="footer">
+    <p>Copyright © 2024</p>
+  </footer>
+</body>
 
-    <div class="container">
-      <div class="section about">
-        <h4>Webpage Redirect</h4>
-        <a
-          class="redirect"
-          aria-label="redirect"
-          href="https://matthewgreen.pages.dev/"
-          ><p>New Website</p></a
-        >
-      </div>
-    </div>
-
-    <!-- End Document -->
-
-    <footer class="footer">
-      <p>Copyright © 2024</p>
-    </footer>
-  </body>
 </html>
