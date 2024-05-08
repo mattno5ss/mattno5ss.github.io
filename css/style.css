@@ -76,38 +76,6 @@ body {
   background-color: whitesmoke;
 }
 
-.computer,
-.math,
-.programming {
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
-}
-
-.computer>.image,
-.math>.image {
-  padding: 4rem;
-}
-
-.code,
-.pcb,
-.eq {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.graph>iframe {
-  height: 640px;
-  width: 840px;
-}
-
-.python-projects>img {
-  max-width: 100%;
-}
-
-.separator {
-  border-top: 3px solid #bbb;
-}
-
 .footer {
   font-weight: 600;
   color: whitesmoke;
@@ -117,32 +85,4 @@ body {
   justify-content: center;
   line-height: 4rem;
   margin-top: 1rem;
-}
-
-.card {
-  border-radius: 6px;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 800px) {
-
-  .computer,
-  .math,
-  .programming {
-    display: grid;
-    grid-template: 0.5fr 1fr / 1fr;
-  }
-
-  .info {
-    grid-area: 2/1/3/2;
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-  }
-
-  .card {
-    width: 100%;
-  }
 }
