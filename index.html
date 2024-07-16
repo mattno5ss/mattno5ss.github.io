@@ -22,14 +22,20 @@
 
   <div class="container">
     <h3>My website has moved!</h3>
-    <p>Redirecting you in 5 seconds...</p>
+    <p>Redirecting you in <time><strong id="seconds">5</strong></time> seconds...</p>
   </div>
 
   <script>
-    function redirect() {
-      window.location = "https://matthewgreen.pages.dev/";
-    }
-    setTimeout('redirect()', 5000);
+    var el = document.getElementById("seconds")
+    var seconds = el.innerHTML;
+    var timeInterval = setInterval(function () {
+      seconds = --seconds;
+      el.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(timeInterval);
+        window.location = "https://matthewgreen.pages.dev/";
+      }
+    }, 1000);
   </script>
 
   <footer class="footer">
