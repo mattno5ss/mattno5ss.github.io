@@ -1,0 +1,15 @@
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.info {
+    font-size: 2rem;
+}

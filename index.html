@@ -1,46 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>Matthew Green</title>
-  <meta name="description" content="redirect to personal website" />
-  <meta name="author" content="Matthew Green" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/skeleton.css" />
-  <link rel="stylesheet" href="css/modern-normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="img/terminal.svg" />
-</head>
-
-<body>
-  <header class="header">
-    <ul class="header-links">
-      <p>Matthew Green</p>
-    </ul>
-  </header>
-
-  <div class="container">
-    <h3>My website has moved!</h3>
-    <p>Redirecting you in <time><strong id="seconds">5</strong></time> seconds...</p>
-  </div>
-
-  <script>
-    var el = document.getElementById("seconds")
-    var seconds = el.innerHTML;
-    var timeInterval = setInterval(function () {
-      seconds = --seconds;
-      el.textContent = seconds;
-      if (seconds <= 0) {
-        clearInterval(timeInterval);
-        window.location = "https://matthewgreen.pages.dev/";
-      }
-    }, 1000);
-  </script>
-
-  <footer class="footer">
-      <p>Copyright © <script>{new Date().getFullYear()}</script></p>
-  </footer>
-</body>
-
+    <head>
+        <meta charset="utf-8" />
+        <title>Matthew Green</title>
+        <meta name="description" content="redirect to personal website" />
+        <meta name="author" content="Matthew Green" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <p class="info">Hello! My website has moved...</p>
+            <p>
+                Redirecting you in
+                <time><strong id="seconds">5</strong></time> seconds...
+            </p>
+        </div>
+        <script>
+            var el = document.getElementById("seconds");
+            var seconds = el.innerHTML;
+            var timeInterval = setInterval(function () {
+                seconds = --seconds;
+                el.textContent = seconds;
+                if (seconds <= 0) {
+                    clearInterval(timeInterval);
+                    window.location = "https://matthewgreen.pages.dev/";
+                }
+            }, 1000);
+        </script>
+    </body>
 </html>
